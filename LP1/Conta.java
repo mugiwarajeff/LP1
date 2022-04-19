@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class Conta {
     private String conta;
     private double saldo;
+
+    public Conta(String conta, double saldo){
+        this.conta = conta;
+        this.saldo = saldo;
+    }
    
 
     public Conta(){
@@ -12,6 +17,9 @@ public class Conta {
         saldo = keyboard.nextDouble();
     }
 
+    public String getConta(){
+        return this.conta;
+    }
     public void creditar(double valor){
         saldo += valor;
     }
