@@ -35,5 +35,4 @@ public class Conta {
     public void consultar(){
         System.out.println("O valor em conta é:" + saldo);
     }
-
 }
